@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "bamboozled:block/dried_bamboo_planks",
+        "top": "bamboozled:block/dried_bamboo_planks",
+        "side": "bamboozled:block/dried_bamboo_planks"
+    }
+}
