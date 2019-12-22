@@ -30,6 +30,7 @@ public class ModBlocks
 	public static Block DRIED_BAMBOO_SLAB;
 	public static Block DRIED_BAMBOO_FENCE;
 	public static Block DRIED_BAMBOO_FENCE_GATE;
+	public static Block DRIED_BAMBOO_PILLAR;
 	
 	public static Block THATCH;
 	public static Block THATCH_STAIRS;
@@ -52,7 +53,8 @@ public class ModBlocks
         DRIED_BAMBOO_SLAB = registerBlock(new SlabBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_slab", ItemGroup.BUILDING_BLOCKS); 
         //DRIED_BAMBOO_FENCE = registerBlock(new FenceBlock(Block.Properties.from(Blocks.DRIED_BAMBOO_PLANKS)), "dried_bamboo_fence", ItemGroup.BUILDING_BLOCKS);
         //DRIED_BAMBOO_FENCE_GATE = registerBlock(new FenceGateBlock(Block.Properties.from(Blocks.DRIED_BAMBOO_PLANKS)), "dried_bamboo_fence_gate", ItemGroup.BUILDING_BLOCKS);
-        
+        DRIED_BAMBOO_PILLAR = registerBlock(new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.LIME).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)), "dried_bamboo_pillar", ItemGroup.BUILDING_BLOCKS);
+
         THATCH = registerBlock(new Block(Block.Properties.create(Material.ORGANIC, MaterialColor.BROWN).hardnessAndResistance(0.3F).sound(SoundType.PLANT)), "thatch", ItemGroup.BUILDING_BLOCKS);
         THATCH_STAIRS = registerBlock(new StairsBlock(THATCH.getDefaultState(), Block.Properties.from(THATCH)), "thatch_stairs", ItemGroup.BUILDING_BLOCKS);
         THATCH_SLAB = registerBlock(new SlabBlock(Block.Properties.from(THATCH)), "thatch_slab", ItemGroup.BUILDING_BLOCKS); 

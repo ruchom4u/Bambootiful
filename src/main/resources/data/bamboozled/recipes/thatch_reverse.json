@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#T",
+        "T#"
+    ],
+    "key": {
+        "#": {
+            "tag": "bamboozled:bamboos"
+        },
+        "T": {
+            "tag": "bamboozled:thatch_items"
+        }
+    },
+    "result": {
+        "item": "bamboozled:thatch",
+        "count": 1
+    }
+}
