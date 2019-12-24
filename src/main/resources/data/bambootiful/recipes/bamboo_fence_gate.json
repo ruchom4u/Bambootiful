@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_fence_gate",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "W": {
+      "item": "bambootiful:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambootiful:bamboo_fence_gate"
+  }
+}

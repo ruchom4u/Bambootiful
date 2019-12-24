@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "bamboozled:block/dried_bamboo_pillar_top",
-        "side": "bamboozled:block/dried_bamboo_pillar"
-    }
-}

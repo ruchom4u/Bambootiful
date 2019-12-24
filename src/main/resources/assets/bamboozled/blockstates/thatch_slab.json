@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "bamboozled:block/thatch_slab" },
-        "type=top": { "model": "bamboozled:block/thatch_slab_top" },
-        "type=double": { "model": "bamboozled:block/thatch" }
-    }
-}

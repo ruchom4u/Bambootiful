@@ -1,0 +1,29 @@
+{
+	"block.bambootiful.bamboo_planks": "Bamboo Planks",
+	"block.bambootiful.bamboo_stairs": "Bamboo Stairs",
+	"block.bambootiful.bamboo_slab": "Bamboo Slab",
+	"block.bambootiful.bamboo_fence": "Bamboo Fence",
+	"block.bambootiful.bamboo_fence_gate": "Bamboo Fence Gate",
+	"block.bambootiful.bamboo_door": "Bamboo Door",
+	"block.bambootiful.bamboo_trapdoor": "Bamboo Trapdoor",
+	"block.bambootiful.bamboo_button": "Bamboo Button",
+	"block.bambootiful.bamboo_pressure_plate": "Bamboo Pressure Plate",
+	"block.bambootiful.bamboo_pillar": "Bamboo Pillar",
+	
+	"item.bambootiful.dried_bamboo": "Dried Bamboo",
+	
+	"block.bambootiful.dried_bamboo_planks": "Dried Bamboo Planks",
+	"block.bambootiful.dried_bamboo_stairs": "Dried Bamboo Stairs",
+	"block.bambootiful.dried_bamboo_slab": "Dried Bamboo Slab",
+	"block.bambootiful.dried_bamboo_fence": "Dried Bamboo Fence",
+	"block.bambootiful.dried_bamboo_fence_gate": "Dried Bamboo Fence Gate",
+	"block.bambootiful.dried_bamboo_door": "Dried Bamboo Door",
+	"block.bambootiful.dried_bamboo_trapdoor": "Dried Bamboo Trapdoor",
+	"block.bambootiful.dried_bamboo_button": "Dried Bamboo Button",
+	"block.bambootiful.dried_bamboo_pressure_plate": "Dried Bamboo Pressure Plate",
+	"block.bambootiful.dried_bamboo_pillar": "Dried Bamboo Pillar",
+	
+	"block.bambootiful.thatch": "Thatch",
+	"block.bambootiful.thatch_stairs": "Thatch Stairs",
+	"block.bambootiful.thatch_slab": "Thatch Slab"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bamboo_button",
+  "ingredients": [
+    {
+      "item": "bambootiful:bamboo_planks"
+    }
+  ],
+  "result": {
+    "item": "bambootiful:bamboo_button"
+  }
+}

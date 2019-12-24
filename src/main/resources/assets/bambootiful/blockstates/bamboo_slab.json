@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "bambootiful:block/bamboo_slab" },
+        "type=top": { "model": "bambootiful:block/bamboo_slab_top" },
+        "type=double": { "model": "bambootiful:block/bamboo_planks" }
+    }
+}

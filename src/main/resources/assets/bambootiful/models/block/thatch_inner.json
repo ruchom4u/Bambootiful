@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "bambootiful:block/thatch_stairs",
+        "top": "bambootiful:block/thatch_stairs",
+        "side": "bambootiful:block/thatch_stairs"
+    }
+}

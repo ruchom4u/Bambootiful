@@ -12,29 +12,29 @@ issueTrackerURL="https://github.com/bageldotjpg/BuzzierBees/issues" #optional
 
 [[mods]] #mandatory
 
-modId="bamboozled" #mandatory
+modId="bambootiful" #mandatory
 
 version="0.1.0" #mandatory
 
-displayName="Bamboozled" #mandatory
+displayName="Bambootiful" #mandatory
 
 updateJSONURL="http://myurl.me/" #optional
 
 displayURL="https://discord.gg/zVBFsXp" #optional
 
-logoFile="bamboozled" #optional
+logoFile="bambootiful" #optional
 
 credits="DurgerKing + byper - sprites" #optional
 
 authors="bageldotjpg" #optional
 
 description='''
-Bamboozled expands on the content introduced in 1.15. 
+Bambootiful expands on the content introduced in 1.15. 
 Main features include wax, crystallized honey, and candles.
 Beekeepers, Honey Slimes, Brown Bears, and Butterflies will come soon!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.bamboozled]] #optional
+[[dependencies.bambootiful]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -46,7 +46,7 @@ Beekeepers, Honey Slimes, Brown Bears, and Butterflies will come soon!
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.bamboozled]]
+[[dependencies.bambootiful]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.1]"

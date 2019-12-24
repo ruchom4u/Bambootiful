@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "bamboozled:block/bamboo_planks",
-        "top": "bamboozled:block/bamboo_planks",
-        "side": "bamboozled:block/bamboo_planks"
-    }
-}

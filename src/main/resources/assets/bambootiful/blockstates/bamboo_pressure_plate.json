@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "bambootiful:block/bamboo_pressure_plate" },
+        "powered=true": { "model": "bambootiful:block/bamboo_pressure_plate_down" }
+    }
+}

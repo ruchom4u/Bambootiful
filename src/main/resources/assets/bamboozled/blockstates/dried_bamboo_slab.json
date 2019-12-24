@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "bamboozled:block/dried_bamboo_slab" },
-        "type=top": { "model": "bamboozled:block/dried_bamboo_slab_top" },
-        "type=double": { "model": "bamboozled:block/dried_bamboo_planks" }
-    }
-}

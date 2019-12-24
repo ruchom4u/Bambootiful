@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y":    { "model": "bamboozled:block/dried_bamboo_pillar" },
-        "axis=z":     { "model": "bamboozled:block/dried_bamboo_pillar", "x": 90 },
-        "axis=x":     { "model": "bamboozled:block/dried_bamboo_pillar", "x": 90, "y": 90 }
-    }
-}

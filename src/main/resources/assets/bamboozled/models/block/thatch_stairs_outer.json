@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "bamboozled:block/thatch",
-        "top": "bamboozled:block/thatch",
-        "side": "bamboozled:block/thatch"
-    }
-}

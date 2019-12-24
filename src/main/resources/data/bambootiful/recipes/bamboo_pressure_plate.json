@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "bambootiful:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambootiful:bamboo_pressure_plate"
+  }
+}

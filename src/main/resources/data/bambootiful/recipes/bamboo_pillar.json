@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bamboo_pillar",
+    "pattern": [
+        "##",
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bamboo"
+        }
+    },
+    "result": {
+        "item": "bambootiful:bamboo_pillar",
+        "count": 1
+    }
+}
