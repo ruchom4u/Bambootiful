@@ -14,7 +14,7 @@ issueTrackerURL="https://github.com/bageldotjpg/BuzzierBees/issues" #optional
 
 modId="bambootiful" #mandatory
 
-version="0.1.0" #mandatory
+version="1.0" #mandatory
 
 displayName="Bambootiful" #mandatory
 
@@ -29,9 +29,8 @@ credits="DurgerKing + byper - sprites" #optional
 authors="bageldotjpg" #optional
 
 description='''
-Bambootiful expands on the content introduced in 1.15. 
-Main features include wax, crystallized honey, and candles.
-Beekeepers, Honey Slimes, Brown Bears, and Butterflies will come soon!
+Bambootiful expands on Bamboo.
+It will introduce new blocks, mobs, and weapons themed around Bamboo!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.bambootiful]] #optional
