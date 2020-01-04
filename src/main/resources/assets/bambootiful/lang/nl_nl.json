@@ -1,0 +1,29 @@
+{
+	"block.bambootiful.bamboo_planks": "Bamboe planken",
+	"block.bambootiful.bamboo_stairs": "Bamboe trappen",
+	"block.bambootiful.bamboo_slab": "Bamboe plaat",
+	"block.bambootiful.bamboo_fence": "Bamboe hek",
+	"block.bambootiful.bamboo_fence_gate": "Bamboe poort",
+	"block.bambootiful.bamboo_door": "Bamboe deur",
+	"block.bambootiful.bamboo_trapdoor": "Bamboe valluik",
+	"block.bambootiful.bamboo_button": "Bamboe knop",
+	"block.bambootiful.bamboo_pressure_plate": "Bamboe drukplaat",
+	"block.bambootiful.bamboo_pillar": "Bamboe pilaar",
+	
+	"item.bambootiful.dried_bamboo": "Gedroogde bamboe",
+	
+	"block.bambootiful.dried_bamboo_planks": "Gedroogde bamboe planken",
+	"block.bambootiful.dried_bamboo_stairs": "Gedroogde bamboe trappen",
+	"block.bambootiful.dried_bamboo_slab": "Gedroogde bamboe plaat",
+	"block.bambootiful.dried_bamboo_fence": "Gedroogde bamboe hek",
+	"block.bambootiful.dried_bamboo_fence_gate": "Gedroogde bamboe poort",
+	"block.bambootiful.dried_bamboo_door": "Gedroogde bamboe deur",
+	"block.bambootiful.dried_bamboo_trapdoor": "Gedroogde bamboe valluik",
+	"block.bambootiful.dried_bamboo_button": "Gedroogde bamboe knop",
+	"block.bambootiful.dried_bamboo_pressure_plate": "Gedroogde bamboe drukplaat",
+	"block.bambootiful.dried_bamboo_pillar": "Gedroogde bamboe pilaar",
+	
+	"block.bambootiful.thatch": "Rieten dak",
+	"block.bambootiful.thatch_stairs": "Rieten trappen",
+	"block.bambootiful.thatch_slab": "Rieten plaat"
+}
