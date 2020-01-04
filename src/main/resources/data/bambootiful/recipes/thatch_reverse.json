@@ -7,10 +7,10 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:sugar_cane"
+            "tag": "bambootiful:bamboos"
         },
         "T": {
-            "tag": "bambootiful:thatch_items"
+            "item": "minecraft:sugar_cane"
         }
     },
     "result": {
