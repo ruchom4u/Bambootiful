@@ -1,6 +1,6 @@
 {
 	"block.bambootiful.bamboo_planks": "Bamboe planken",
-	"block.bambootiful.bamboo_stairs": "Bamboe trappen",
+	"block.bambootiful.bamboo_stairs": "Bamboe trap",
 	"block.bambootiful.bamboo_slab": "Bamboe plaat",
 	"block.bambootiful.bamboo_fence": "Bamboe hek",
 	"block.bambootiful.bamboo_fence_gate": "Bamboe poort",
@@ -13,7 +13,7 @@
 	"item.bambootiful.dried_bamboo": "Gedroogde bamboe",
 	
 	"block.bambootiful.dried_bamboo_planks": "Gedroogde bamboe planken",
-	"block.bambootiful.dried_bamboo_stairs": "Gedroogde bamboe trappen",
+	"block.bambootiful.dried_bamboo_stairs": "Gedroogde bamboe trap",
 	"block.bambootiful.dried_bamboo_slab": "Gedroogde bamboe plaat",
 	"block.bambootiful.dried_bamboo_fence": "Gedroogde bamboe hek",
 	"block.bambootiful.dried_bamboo_fence_gate": "Gedroogde bamboe poort",
@@ -24,6 +24,6 @@
 	"block.bambootiful.dried_bamboo_pillar": "Gedroogde bamboe pilaar",
 	
 	"block.bambootiful.thatch": "Rieten dak",
-	"block.bambootiful.thatch_stairs": "Rieten trappen",
+	"block.bambootiful.thatch_stairs": "Rieten trap",
 	"block.bambootiful.thatch_slab": "Rieten plaat"
 }
