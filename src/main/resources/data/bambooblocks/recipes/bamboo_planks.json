@@ -1,0 +1,18 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "bambootiful:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambooblocks:bamboo_planks",
+    "count": 3
+  }
+}

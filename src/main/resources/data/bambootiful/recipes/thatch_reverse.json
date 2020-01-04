@@ -1,3 +1,4 @@
+
 {
     "type": "minecraft:crafting_shaped",
     "group": "thatch",
@@ -10,11 +11,11 @@
             "tag": "bambootiful:bamboos"
         },
         "T": {
-            "tag": "bambootiful:thatch_items"
+            "item": "minecraft:sugar_cane"
         }
     },
     "result": {
         "item": "bambootiful:thatch",
-        "count": 1
+        "count": 2
     }
 }

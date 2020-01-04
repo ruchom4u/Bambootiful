@@ -17,7 +17,7 @@ public class ModItems
     public static void registerItems(RegistryEvent.Register<Item> event)
 	{
         DRIED_BAMBOO = registerItem(new Item(new Item.Properties().group(ItemGroup.MISC)), "dried_bamboo");
-        BAMBOO_SPEAR = registerItem(new BambooSpearItem(new Item.Properties().group(ItemGroup.MISC)), "bamboo_spear");
+        //BAMBOO_SPEAR = registerItem(new BambooSpearItem(new Item.Properties().group(ItemGroup.MISC)), "bamboo_spear");
 	}
     
     public static Item registerItem(Item item, String name)
