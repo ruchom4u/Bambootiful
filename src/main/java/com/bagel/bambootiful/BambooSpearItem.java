@@ -16,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
@@ -25,6 +26,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BambooSpearItem extends Item {
    public BambooSpearItem(Item.Properties builder) {
@@ -53,6 +56,18 @@ public class BambooSpearItem extends Item {
    }
 
    /**
+    * Returns true if this item has an enchantment glint. By default, this returns <code>stack.isItemEnchanted()</code>,
+    * but other items can override it (for instance, written books always return true).
+    *  
+    * Note that if you override this method, you generally want to also call the super version (on {@link Item}) to get
+    * the glint for enchanted items. Of course, that is unnecessary if the overwritten version always returns true.
+    */
+   @OnlyIn(Dist.CLIENT)
+   public boolean hasEffect(ItemStack stack) {
+      return false;
+   }
+
+   /**
     * Called when the player stops using an Item (stops holding the right mouse button).
     */
    public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
@@ -67,14 +82,14 @@ public class BambooSpearItem extends Item {
                      p_220047_1_.sendBreakAnimation(entityLiving.getActiveHand());
                   });
                   if (j == 0) {
-                     BambooSpearEntity BambooSpearEntity = new BambooSpearEntity(worldIn, playerentity, stack);
-                     BambooSpearEntity.shoot(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
+                     BambooSpearEntity bamboospearentity = new BambooSpearEntity(worldIn, playerentity, stack);
+                     bamboospearentity.shoot(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                      if (playerentity.abilities.isCreativeMode) {
-                        BambooSpearEntity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+                        bamboospearentity.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
                      }
 
-                     worldIn.addEntity(BambooSpearEntity);
-                     worldIn.playMovingSound((PlayerEntity)null, BambooSpearEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                     worldIn.addEntity(bamboospearentity);
+                     worldIn.playMovingSound((PlayerEntity)null, bamboospearentity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
                      if (!playerentity.abilities.isCreativeMode) {
                         playerentity.inventory.deleteStack(stack);
                      }
@@ -96,7 +111,8 @@ public class BambooSpearItem extends Item {
                   playerentity.addVelocity((double)f1, (double)f2, (double)f3);
                   playerentity.startSpinAttack(20);
                   if (playerentity.onGround) {
-                     float f6 = 1.1999999F;
+                     @SuppressWarnings("unused")
+					 float f6 = 1.1999999F;
                      playerentity.move(MoverType.SELF, new Vec3d(0.0D, (double)1.1999999F, 0.0D));
                   }
 
@@ -123,13 +139,13 @@ public class BambooSpearItem extends Item {
     */
    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
       ItemStack itemstack = playerIn.getHeldItem(handIn);
-      if (itemstack.getDamage() >= itemstack.getMaxDamage() - 1) {
-         return ActionResult.func_226251_d_(itemstack);
+      if (itemstack.getDamage() >= itemstack.getMaxDamage()) {
+         return new ActionResult<>(ActionResultType.FAIL, itemstack);
       } else if (EnchantmentHelper.getRiptideModifier(itemstack) > 0 && !playerIn.isWet()) {
-         return ActionResult.func_226251_d_(itemstack);
+         return new ActionResult<>(ActionResultType.FAIL, itemstack);
       } else {
          playerIn.setActiveHand(handIn);
-         return ActionResult.func_226249_b_(itemstack);
+         return new ActionResult<>(ActionResultType.SUCCESS, itemstack);
       }
    }
 
@@ -160,7 +176,8 @@ public class BambooSpearItem extends Item {
    /**
     * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.
     */
-   public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
+   @SuppressWarnings("deprecation")
+public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
       Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
       if (equipmentSlot == EquipmentSlotType.MAINHAND) {
          multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 8.0D, AttributeModifier.Operation.ADDITION));

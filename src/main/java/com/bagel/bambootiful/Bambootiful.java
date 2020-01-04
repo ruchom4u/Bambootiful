@@ -2,8 +2,6 @@ package com.bagel.bambootiful;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -50,10 +48,6 @@ public class Bambootiful
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-		RenderTypeLookup.setRenderLayer(ModBlocks.BAMBOO_DOOR,RenderType.func_228641_d_());
-		RenderTypeLookup.setRenderLayer(ModBlocks.DRIED_BAMBOO_DOOR,RenderType.func_228641_d_());
-		RenderTypeLookup.setRenderLayer(ModBlocks.BAMBOO_TRAPDOOR,RenderType.func_228641_d_());
-		RenderTypeLookup.setRenderLayer(ModBlocks.DRIED_BAMBOO_TRAPDOOR,RenderType.func_228641_d_());
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 

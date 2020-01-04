@@ -7,7 +7,7 @@
     ],
     "key": {
         "#": {
-            "tag": "bambootiful:bamboos"
+            "item": "minecraft:sugar_cane"
         },
         "T": {
             "tag": "bambootiful:thatch_items"
@@ -15,6 +15,6 @@
     },
     "result": {
         "item": "bambootiful:thatch",
-        "count": 1
+        "count": 2
     }
 }

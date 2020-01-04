@@ -21,9 +21,9 @@ public class ModEntities
     @SubscribeEvent
     public static void registerEntities(RegistryEvent.Register<EntityType<?>> event)
     {
-    	ModEntities.BAMBOO_SPEAR = EntityType.Builder.<BambooSpearEntity>create(BambooSpearEntity::new, EntityClassification.MISC).size(0.5F, 0.5F).build("bambootiful:bamboo_spear");
-        ModEntities.BAMBOO_SPEAR.setRegistryName("bamboo_spear");
-        ForgeRegistries.ENTITIES.register(ModEntities.BAMBOO_SPEAR);
+    	//ModEntities.BAMBOO_SPEAR = EntityType.Builder.<BambooSpearEntity>create(BambooSpearEntity::new, EntityClassification.MISC).size(0.5F, 0.5F).build("bambootiful:bamboo_spear");
+        //ModEntities.BAMBOO_SPEAR.setRegistryName("bamboo_spear");
+        //ForgeRegistries.ENTITIES.register(ModEntities.BAMBOO_SPEAR);
     }
 
     public static <T extends Entity> EntityType<T> createEntity(EntityType.IFactory<T> factory, EntityClassification classification, String name, int trackingRange, int updateFrequency, boolean sendsVelocityUpdates)
@@ -38,6 +38,6 @@ public class ModEntities
     @OnlyIn(Dist.CLIENT)
     public static void registerRendering()
     {
-        RenderingRegistry.registerEntityRenderingHandler((EntityType<? extends BambooSpearEntity>)ModEntities.BAMBOO_SPEAR, BambooSpearEntityRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(BambooSpearEntity.class, BambooSpearRenderer::new);
     }
 }

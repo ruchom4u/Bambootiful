@@ -59,22 +59,22 @@ public class ModBlocks
         BAMBOO_SLAB = registerBlock(new SlabBlock(Block.Properties.from(BAMBOO_PLANKS)), "bamboo_slab", ItemGroup.BUILDING_BLOCKS); 
         BAMBOO_PRESSURE_PLATE = registerBlock(new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(BAMBOO_PLANKS).doesNotBlockMovement()), "bamboo_pressure_plate", ItemGroup.REDSTONE);
         BAMBOO_FENCE = registerBlock(new FenceBlock(Block.Properties.from(BAMBOO_PLANKS)), "bamboo_fence", ItemGroup.DECORATIONS);
-        BAMBOO_TRAPDOOR = registerBlock(new TrapDoorBlock(Block.Properties.from(BAMBOO_PLANKS).func_226896_b_()), "bamboo_trapdoor", ItemGroup.REDSTONE);
+        BAMBOO_TRAPDOOR = registerBlock(new TrapDoorBlock(Block.Properties.from(BAMBOO_PLANKS)), "bamboo_trapdoor", ItemGroup.REDSTONE);
         BAMBOO_FENCE_GATE = registerBlock(new FenceGateBlock(Block.Properties.from(BAMBOO_PLANKS)), "bamboo_fence_gate", ItemGroup.REDSTONE);
         BAMBOO_BUTTON = registerBlock(new WoodButtonBlock(Block.Properties.from(BAMBOO_PLANKS).doesNotBlockMovement()), "bamboo_button", ItemGroup.REDSTONE);
         BAMBOO_STAIRS = registerBlock(new StairsBlock(BAMBOO_PLANKS.getDefaultState(), Block.Properties.from(BAMBOO_PLANKS)), "bamboo_stairs", ItemGroup.BUILDING_BLOCKS);
-        BAMBOO_DOOR = registerBlock(new DoorBlock(Block.Properties.from(BAMBOO_PLANKS).func_226896_b_()), "bamboo_door", ItemGroup.REDSTONE);
+        BAMBOO_DOOR = registerBlock(new DoorBlock(Block.Properties.from(BAMBOO_PLANKS)), "bamboo_door", ItemGroup.REDSTONE);
         
         DRIED_BAMBOO_PLANKS = registerBlock(new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)), "dried_bamboo_planks", ItemGroup.BUILDING_BLOCKS);
         DRIED_BAMBOO_PILLAR = registerBlock(new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.LIME).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)), "dried_bamboo_pillar", ItemGroup.BUILDING_BLOCKS);
         DRIED_BAMBOO_SLAB = registerBlock(new SlabBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_slab", ItemGroup.BUILDING_BLOCKS); 
         DRIED_BAMBOO_PRESSURE_PLATE = registerBlock(new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(DRIED_BAMBOO_PLANKS).doesNotBlockMovement()), "dried_bamboo_pressure_plate", ItemGroup.REDSTONE);
         DRIED_BAMBOO_FENCE = registerBlock(new FenceBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_fence", ItemGroup.DECORATIONS);
-        DRIED_BAMBOO_TRAPDOOR = registerBlock(new TrapDoorBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS).func_226896_b_()), "dried_bamboo_trapdoor", ItemGroup.REDSTONE);
+        DRIED_BAMBOO_TRAPDOOR = registerBlock(new TrapDoorBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_trapdoor", ItemGroup.REDSTONE);
         DRIED_BAMBOO_FENCE_GATE = registerBlock(new FenceGateBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_fence_gate", ItemGroup.REDSTONE);
         DRIED_BAMBOO_BUTTON = registerBlock(new WoodButtonBlock(Block.Properties.from(DRIED_BAMBOO_PLANKS).doesNotBlockMovement()), "dried_bamboo_button", ItemGroup.REDSTONE);
         DRIED_BAMBOO_STAIRS = registerBlock(new StairsBlock(DRIED_BAMBOO_PLANKS.getDefaultState(), Block.Properties.from(DRIED_BAMBOO_PLANKS)), "dried_bamboo_stairs", ItemGroup.BUILDING_BLOCKS);
-        DRIED_BAMBOO_DOOR = registerBlock(new DoorBlock(Block.Properties.from(BAMBOO_PLANKS).func_226896_b_()), "dried_bamboo_door", ItemGroup.REDSTONE);
+        DRIED_BAMBOO_DOOR = registerBlock(new DoorBlock(Block.Properties.from(BAMBOO_PLANKS)), "dried_bamboo_door", ItemGroup.REDSTONE);
 
         THATCH = registerBlock(new Block(Block.Properties.create(Material.ORGANIC, MaterialColor.BROWN).hardnessAndResistance(0.3F).sound(SoundType.PLANT)), "thatch", ItemGroup.BUILDING_BLOCKS);
         THATCH_STAIRS = registerBlock(new StairsBlock(THATCH.getDefaultState(), Block.Properties.from(THATCH)), "thatch_stairs", ItemGroup.BUILDING_BLOCKS);

@@ -11,7 +11,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
@@ -29,8 +28,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BambooSpearEntity extends AbstractArrowEntity {
    private static final DataParameter<Byte> LOYALTY_LEVEL = EntityDataManager.createKey(BambooSpearEntity.class, DataSerializers.BYTE);
-   private static final DataParameter<Boolean> field_226571_aq_ = EntityDataManager.createKey(BambooSpearEntity.class, DataSerializers.BOOLEAN);
-   private ItemStack thrownStack = new ItemStack(Items.TRIDENT);
+   private ItemStack thrownStack = new ItemStack(ModItems.BAMBOO_SPEAR);
    private boolean dealtDamage;
    public int returningTicks;
 
@@ -39,10 +37,9 @@ public class BambooSpearEntity extends AbstractArrowEntity {
    }
 
    public BambooSpearEntity(World p_i48790_1_, LivingEntity p_i48790_2_, ItemStack p_i48790_3_) {
-      super(EntityType.TRIDENT, p_i48790_2_, p_i48790_1_);
+      super(ModEntities.BAMBOO_SPEAR, p_i48790_2_, p_i48790_1_);
       this.thrownStack = p_i48790_3_.copy();
       this.dataManager.set(LOYALTY_LEVEL, (byte)EnchantmentHelper.getLoyaltyModifier(p_i48790_3_));
-      this.dataManager.set(field_226571_aq_, p_i48790_3_.hasEffect());
    }
 
    @OnlyIn(Dist.CLIENT)
@@ -53,7 +50,6 @@ public class BambooSpearEntity extends AbstractArrowEntity {
    protected void registerData() {
       super.registerData();
       this.dataManager.register(LOYALTY_LEVEL, (byte)0);
-      this.dataManager.register(field_226571_aq_, false);
    }
 
    /**
@@ -75,10 +71,10 @@ public class BambooSpearEntity extends AbstractArrowEntity {
             this.remove();
          } else if (i > 0) {
             this.func_203045_n(true);
-            Vec3d vec3d = new Vec3d(entity.func_226277_ct_() - this.func_226277_ct_(), entity.func_226280_cw_() - this.func_226278_cu_(), entity.func_226281_cx_() - this.func_226281_cx_());
-            this.func_226288_n_(this.func_226277_ct_(), this.func_226278_cu_() + vec3d.y * 0.015D * (double)i, this.func_226281_cx_());
+            Vec3d vec3d = new Vec3d(entity.posX - this.posX, entity.posY + (double)entity.getEyeHeight() - this.posY, entity.posZ - this.posZ);
+            this.posY += vec3d.y * 0.015D * (double)i;
             if (this.world.isRemote) {
-               this.lastTickPosY = this.func_226278_cu_();
+               this.lastTickPosY = this.posY;
             }
 
             double d0 = 0.05D * (double)i;
@@ -107,11 +103,6 @@ public class BambooSpearEntity extends AbstractArrowEntity {
       return this.thrownStack.copy();
    }
 
-   @OnlyIn(Dist.CLIENT)
-   public boolean func_226572_w_() {
-      return this.dataManager.get(field_226571_aq_);
-   }
-
    @Nullable
    protected EntityRayTraceResult func_213866_a(Vec3d p_213866_1_, Vec3d p_213866_2_) {
       return this.dealtDamage ? null : super.func_213866_a(p_213866_1_, p_213866_2_);
@@ -129,27 +120,21 @@ public class BambooSpearEntity extends AbstractArrowEntity {
       DamageSource damagesource = DamageSource.causeTridentDamage(this, (Entity)(entity1 == null ? this : entity1));
       this.dealtDamage = true;
       SoundEvent soundevent = SoundEvents.ITEM_TRIDENT_HIT;
-      if (entity.attackEntityFrom(damagesource, f)) {
-         if (entity.getType() == EntityType.ENDERMAN) {
-            return;
+      if (entity.attackEntityFrom(damagesource, f) && entity instanceof LivingEntity) {
+         LivingEntity livingentity1 = (LivingEntity)entity;
+         if (entity1 instanceof LivingEntity) {
+            EnchantmentHelper.applyThornEnchantments(livingentity1, entity1);
+            EnchantmentHelper.applyArthropodEnchantments((LivingEntity)entity1, livingentity1);
          }
 
-         if (entity instanceof LivingEntity) {
-            LivingEntity livingentity1 = (LivingEntity)entity;
-            if (entity1 instanceof LivingEntity) {
-               EnchantmentHelper.applyThornEnchantments(livingentity1, entity1);
-               EnchantmentHelper.applyArthropodEnchantments((LivingEntity)entity1, livingentity1);
-            }
-
-            this.arrowHit(livingentity1);
-         }
+         this.arrowHit(livingentity1);
       }
 
       this.setMotion(this.getMotion().mul(-0.01D, -0.1D, -0.01D));
       float f1 = 1.0F;
       if (this.world instanceof ServerWorld && this.world.isThundering() && EnchantmentHelper.hasChanneling(this.thrownStack)) {
          BlockPos blockpos = entity.getPosition();
-         if (this.world.func_226660_f_(blockpos)) {
+         if (this.world.isSkyLightMax(blockpos)) {
             LightningBoltEntity lightningboltentity = new LightningBoltEntity(this.world, (double)blockpos.getX() + 0.5D, (double)blockpos.getY(), (double)blockpos.getZ() + 0.5D, false);
             lightningboltentity.setCaster(entity1 instanceof ServerPlayerEntity ? (ServerPlayerEntity)entity1 : null);
             ((ServerWorld)this.world).addLightningBolt(lightningboltentity);
@@ -180,8 +165,8 @@ public class BambooSpearEntity extends AbstractArrowEntity {
     */
    public void readAdditional(CompoundNBT compound) {
       super.readAdditional(compound);
-      if (compound.contains("Trident", 10)) {
-         this.thrownStack = ItemStack.read(compound.getCompound("Trident"));
+      if (compound.contains("Bamboo Spear", 10)) {
+         this.thrownStack = ItemStack.read(compound.getCompound("Bamboo Spear"));
       }
 
       this.dealtDamage = compound.getBoolean("DealtDamage");
@@ -190,14 +175,14 @@ public class BambooSpearEntity extends AbstractArrowEntity {
 
    public void writeAdditional(CompoundNBT compound) {
       super.writeAdditional(compound);
-      compound.put("Trident", this.thrownStack.write(new CompoundNBT()));
+      compound.put("Bamboo Spear", this.thrownStack.write(new CompoundNBT()));
       compound.putBoolean("DealtDamage", this.dealtDamage);
    }
 
-   public void func_225516_i_() {
+   protected void tryDespawn() {
       int i = this.dataManager.get(LOYALTY_LEVEL);
       if (this.pickupStatus != AbstractArrowEntity.PickupStatus.ALLOWED || i <= 0) {
-         super.func_225516_i_();
+         super.tryDespawn();
       }
 
    }
