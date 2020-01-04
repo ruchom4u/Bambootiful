@@ -55,7 +55,8 @@ public class BambooSpearItem extends Item {
    /**
     * Called when the player stops using an Item (stops holding the right mouse button).
     */
-   public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
+   @SuppressWarnings("unused")
+public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
       if (entityLiving instanceof PlayerEntity) {
          PlayerEntity playerentity = (PlayerEntity)entityLiving;
          int i = this.getUseDuration(stack) - timeLeft;
@@ -160,7 +161,8 @@ public class BambooSpearItem extends Item {
    /**
     * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.
     */
-   public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
+   @SuppressWarnings("deprecation")
+public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
       Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
       if (equipmentSlot == EquipmentSlotType.MAINHAND) {
          multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 8.0D, AttributeModifier.Operation.ADDITION));
