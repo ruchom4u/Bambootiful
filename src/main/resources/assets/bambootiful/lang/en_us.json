@@ -25,5 +25,11 @@
 	
 	"block.bambootiful.thatch": "Thatch",
 	"block.bambootiful.thatch_stairs": "Thatch Stairs",
-	"block.bambootiful.thatch_slab": "Thatch Slab"
+	"block.bambootiful.thatch_slab": "Thatch Slab",
+	
+	"block.bambootiful.vertical_bamboo_planks": "Vertical Bamboo Planks",
+	"block.bambootiful.bamboo_vertical_slab": "Bamboo Vertical Slab",
+	"block.bambootiful.vertical_dried_bamboo_planks": "Vertical Dried Bamboo Planks",
+	"block.bambootiful.dried_bamboo_vertical_slab": "Dried Bamboo Vertical Slab",
+	"block.bambootiful.thatch_vertical_slab": "Thatch Vertical Slab"
 }
