@@ -1,0 +1,6 @@
+{
+    "parent": "bambootiful:item/blowpipe",
+    "textures": {
+        "layer0": "bambootiful:item/blowpipe_firework"
+    }
+}
