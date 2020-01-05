@@ -14,7 +14,7 @@ issueTrackerURL="https://github.com/bageldotjpg/BuzzierBees/issues" #optional
 
 modId="bambootiful" #mandatory
 
-version="1.1.0" #mandatory
+version="1.1" #mandatory
 
 displayName="Bambootiful" #mandatory
 
