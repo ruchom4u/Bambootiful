@@ -12,11 +12,13 @@ public class ModItems
 {
 	public static Item DRIED_BAMBOO;
 	public static Item BAMBOO_SPEAR;
+	public static Item BLOWPIPE;
 	
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
 	{
         DRIED_BAMBOO = registerItem(new Item(new Item.Properties().group(ItemGroup.MISC)), "dried_bamboo");
+        //BLOWPIPE = registerItem(new CrossbowItem(new Item.Properties().defaultMaxDamage(326).group(ItemGroup.COMBAT)), "blowpipe");
         //BAMBOO_SPEAR = registerItem(new BambooSpearItem(new Item.Properties().group(ItemGroup.MISC)), "bamboo_spear");
 	}
     
