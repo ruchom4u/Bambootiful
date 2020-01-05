@@ -1,0 +1,9 @@
+{
+    "variants": {
+ 		"type=north": { "model": "bambootiful:block/dried_bamboo_vertical_slab", "y": 0, "uvlock": true },
+ 		"type=south": { "model": "bambootiful:block/dried_bamboo_vertical_slab", "y": 180, "uvlock": true },
+  		"type=east": { "model": "bambootiful:block/dried_bamboo_vertical_slab", "y": 90, "uvlock": true },
+ 		"type=west": { "model": "bambootiful:block/dried_bamboo_vertical_slab", "y": 270, "uvlock": true },
+        "type=double": { "model": "bambootiful:block/dried_bamboo_planks" }
+    }
+}

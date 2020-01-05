@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "bambootiful:dried_bamboo_slab"
+    }
+  },
+  "result": {
+    "item": "bambootiful:dried_bamboo_vertical_slab",
+    "count": 3
+  }
+}

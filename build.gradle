@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0.1'
+version = '1.1.0'
 group = 'com.bagel.bambootiful' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'bambootiful-1.15.1'
 

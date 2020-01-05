@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bambootiful:vertical_dried_bamboo_planks"
+    }
+  ],
+  "result": {
+    "item": "bambootiful:dried_bamboo_planks"
+  }
+}

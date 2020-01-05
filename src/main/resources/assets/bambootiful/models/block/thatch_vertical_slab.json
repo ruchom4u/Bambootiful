@@ -1,0 +1,8 @@
+{
+    "parent": "bambootiful:block/vertical_slab",
+    "textures": {
+        "side": "bambootiful:block/thatch",
+        "top": "bambootiful:block/thatch",
+        "bottom": "bambootiful:block/thatch"
+    }
+}
