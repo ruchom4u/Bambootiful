@@ -9,6 +9,10 @@
 	"block.bambootiful.bamboo_button": "Bamboo Button",
 	"block.bambootiful.bamboo_pressure_plate": "Bamboo Pressure Plate",
 	"block.bambootiful.bamboo_pillar": "Bamboo Pillar",
+	"block.bambootiful.vertical_bamboo_planks": "Vertical Bamboo Planks",
+	"block.bambootiful.bamboo_vertical_slab": "Bamboo Vertical Slab",
+	"block.bambootiful.bamboo_bookshelf": "Bamboo Bookshelf",
+	"block.bambootiful.bamboo_ladder": "Bamboo Ladder",
 	
 	"item.bambootiful.dried_bamboo": "Dried Bamboo",
 	
@@ -22,14 +26,13 @@
 	"block.bambootiful.dried_bamboo_button": "Dried Bamboo Button",
 	"block.bambootiful.dried_bamboo_pressure_plate": "Dried Bamboo Pressure Plate",
 	"block.bambootiful.dried_bamboo_pillar": "Dried Bamboo Pillar",
+	"block.bambootiful.vertical_dried_bamboo_planks": "Vertical Dried Bamboo Planks",
+	"block.bambootiful.dried_bamboo_vertical_slab": "Dried Bamboo Vertical Slab",
+	"block.bambootiful.dried_bamboo_bookshelf": "Dried Bamboo Bookshelf",
+	"block.bambootiful.dried_bamboo_ladder": "Dried Bamboo Ladder",
 	
 	"block.bambootiful.thatch": "Thatch",
 	"block.bambootiful.thatch_stairs": "Thatch Stairs",
 	"block.bambootiful.thatch_slab": "Thatch Slab",
-	
-	"block.bambootiful.vertical_bamboo_planks": "Vertical Bamboo Planks",
-	"block.bambootiful.bamboo_vertical_slab": "Bamboo Vertical Slab",
-	"block.bambootiful.vertical_dried_bamboo_planks": "Vertical Dried Bamboo Planks",
-	"block.bambootiful.dried_bamboo_vertical_slab": "Dried Bamboo Vertical Slab",
 	"block.bambootiful.thatch_vertical_slab": "Thatch Vertical Slab"
 }

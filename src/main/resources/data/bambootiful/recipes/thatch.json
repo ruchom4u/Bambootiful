@@ -7,10 +7,10 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:sugar_cane"
+            "item": "minecraft:wheat"
         },
         "B": {
-            "tag": "bambootiful:bamboos"
+            "item": "bambootiful:dried_bamboo"
         }
     },
     "result": {

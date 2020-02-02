@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "bambootiful:block/bamboo_planks",
+        "side": "bambootiful:block/bamboo_bookshelf"
+    }
+}
