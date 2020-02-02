@@ -1,20 +1,20 @@
-
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#D",
-    "D#"
+    "# #",
+    "#W#",
+    "# #"
   ],
   "key": {
     "#": {
       "item": "minecraft:bamboo"
     },
-    "D": {
-      "item": "bambootiful:dried_bamboo"
+    "W": {
+      "item": "bambootiful:bamboo_planks"
     }
   },
   "result": {
-    "item": "bambooblocks:bamboo_planks",
+    "item": "bambootiful:bamboo_ladder",
     "count": 4
   }
 }
