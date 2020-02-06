@@ -1,0 +1,38 @@
+{
+	"block.bambootiful.bamboo_planks": "Madera de bambú",
+	"block.bambootiful.bamboo_stairs": "Escaleras de bambú",
+	"block.bambootiful.bamboo_slab": "Losa de bambú",
+	"block.bambootiful.bamboo_fence": "Valla de bambú",
+	"block.bambootiful.bamboo_fence_gate": "Puerta de valla de bambú",
+	"block.bambootiful.bamboo_door": "Puerta de bambú",
+	"block.bambootiful.bamboo_trapdoor": "Trampilla de bambú",
+	"block.bambootiful.bamboo_button": "Botón de bambú",
+	"block.bambootiful.bamboo_pressure_plate": "Placa de presión de bambú",
+	"block.bambootiful.bamboo_pillar": "Pilar de bambú",
+	"block.bambootiful.vertical_bamboo_planks": "Madera de bambú vertical",
+	"block.bambootiful.bamboo_vertical_slab": "Losa de bambú vertical",
+	"block.bambootiful.bamboo_bookshelf": "Librería de bambú",
+	"block.bambootiful.bamboo_ladder": "Escalera de mano de bambú",
+	
+	"item.bambootiful.dried_bamboo": "Bambú seco",
+	
+	"block.bambootiful.dried_bamboo_planks": "Madera de bambú seco",
+	"block.bambootiful.dried_bamboo_stairs": "Escaleras de bambú seco",
+	"block.bambootiful.dried_bamboo_slab": "Losa de bambú seco",
+	"block.bambootiful.dried_bamboo_fence": "Valla de bambú seco",
+	"block.bambootiful.dried_bamboo_fence_gate": "Puerta de valla de bambú seco",
+	"block.bambootiful.dried_bamboo_door": "Puerta de bambú seco",
+	"block.bambootiful.dried_bamboo_trapdoor": "Trampilla de bambú seco",
+	"block.bambootiful.dried_bamboo_button": "Botón de bambú seco",
+	"block.bambootiful.dried_bamboo_pressure_plate": "Placa de presión de bambú seco",
+	"block.bambootiful.dried_bamboo_pillar": "Pilar de bambú seco",
+	"block.bambootiful.vertical_dried_bamboo_planks": "Madera de bambú seco vertical",
+	"block.bambootiful.dried_bamboo_vertical_slab": "Losa de bambú seco vertical",
+	"block.bambootiful.dried_bamboo_bookshelf": "Librería de bambú seco",
+	"block.bambootiful.dried_bamboo_ladder": "Escalera de mano de bambú seco",
+	
+	"block.bambootiful.thatch": "Cañas",
+	"block.bambootiful.thatch_stairs": "Escaleras de cañas",
+	"block.bambootiful.thatch_slab": "Losa de cañas",
+	"block.bambootiful.thatch_vertical_slab": "Losa de cañas vertical"
+}
